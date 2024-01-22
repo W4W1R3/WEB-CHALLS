@@ -18,6 +18,38 @@ In the page we don't see much, checking the source will give us the credentials 
     
 So now we know what are the parameters we need to send, and what are their values
 
+### With Python and requests
+First I solved it with python and the requests module so I will show it's solution.
+```
+import requests
+url = "http://165.227.106.113/post.php"
+d = {"username": "admin", "password": "71urlkufpsdnlkadsf"}
+r = requests.post(url, data = d)
+print(r.text)
+```
+File p.py
+
+~~~
+╭─ ~/Rootank ··························································································································································································· ✔ │ 15:28:44 ─╮
+╰─ python3 p.py                                                                                                                                                                                                           ─╯
+<h1>flag{p0st_d4t4_4ll_d4y}</h1>
+~~~
+
+### With curl
+As I said this is my first time using this tool, but it's actually not complicated, the final function looked like this:
+
+`curl  "http://165.227.106.113/post.php" -d "username=admin&password=71urlkufpsdnlkadsf"`
+
+Comparing it to python, this is indeed much faster to make and execute, so I guess I will use it more often for simple HTTP requests or any other URL based protocols.
+I will also explain what this function does if you are interested:
+* `curl` is of course the program we run
+* Next is the url, which doesn't have to be at the begging, `curl  -d "username=admin&password=71urlkufpsdnlkadsf" "http://165.227.106.113/post.php"` this would also
+work
+* `-d` for data, this will also automaticly inform `curl` that this is POST requests (GET doens't have body).
+* The data of the Post request.
+
+My conclusion is that curl is a powerful command tool and I am definitely will use it in the future.
+
 
 
      
