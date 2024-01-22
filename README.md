@@ -20,4 +20,4 @@ Each challenge comes with detailed instructions, hints, and solutions, making it
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/web-ctf-challenges.git
+   git clone https://github.com/W4W1R3/web-ctf-challenges.git
