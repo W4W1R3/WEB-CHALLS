@@ -2,7 +2,7 @@
 https://ctflearn.com/challenge/114
 
 ### DESCRIPTION
-    This website requires authentication, via POST. However, it seems as if someone has defaced our site. Maybe there is still some way to authenticate?
+This website requires authentication, via POST. However, it seems as if someone has defaced our site. Maybe there is still some way to authenticate?
 
 # SOLUTION
 From the description alone we understand what is the challenge about. Make a POST request, and pass login information, the question is how it should look like and
