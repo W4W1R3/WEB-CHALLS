@@ -37,19 +37,16 @@ File p.py
 ~~~
 
 ### With curl
-As I said this is my first time using this tool, but it's actually not complicated, the final function looked like this:
-
 `curl  "http://165.227.106.113/post.php" -d "username=admin&password=71urlkufpsdnlkadsf"`
 
-Comparing it to python, this is indeed much faster to make and execute, so I guess I will use it more often for simple HTTP requests or any other URL based protocols.
-I will also explain what this function does if you are interested:
+Comparing it to python, this is indeed much faster to make and execute
+
 * `curl` is of course the program we run
 * Next is the url, which doesn't have to be at the begging, `curl  -d "username=admin&password=71urlkufpsdnlkadsf" "http://165.227.106.113/post.php"` this would also
 work
 * `-d` for data, this will also automaticly inform `curl` that this is POST requests (GET doens't have body).
 * The data of the Post request.
 
-My conclusion is that curl is a powerful command tool and I am definitely will use it in the future.
 
 
 
