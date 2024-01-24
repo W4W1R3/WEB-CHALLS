@@ -30,5 +30,6 @@ The response above wanted the request traffic to be referred from a site called 
 ```
 
 
-### Burpsuite can also be used in thi case
-![Youtube video](https://www.youtube.com/watch?v=yIgEv4kMxuM)
+Burpsuite can also be used in thi case
+
+[Youtube video](https://www.youtube.com/watch?v=yIgEv4kMxuM)
