@@ -28,3 +28,6 @@ The response above wanted the request traffic to be referred from a site called 
     Here is your flag: flag{redacted}
     <!-- Sup3rS3cr3tAg3nt  -->
 ```
+
+
+### Burpsuite can also be used in thi case
