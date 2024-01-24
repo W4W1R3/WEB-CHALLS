@@ -17,13 +17,14 @@ A curl request was done to the web page and got a response back as follow.
     <!-- Sup3rS3cr3tAg3nt  -->
 ```
 So the curl command was constructed with a modified User-Agent as below.
-
+```console
     curl -H "User-Agent: Sup3rS3cr3tAg3nt" http://165.227.106.113/header.php 
     Sorry, it seems as if you did not just come from the site, "awesomesauce.com".
     <!-- Sup3rS3cr3tAg3nt  -->
-
+```
 The response above wanted the request traffic to be referred from a site called awesomesauce.com. So the curl command is further constructed to modify the referer in the header reqeust as below.
-
+```console
     % curl -e 'awesomesauce.com' -H "User-Agent: Sup3rS3cr3tAg3nt" http://165.227.106.113/header.php
     Here is your flag: flag{redacted}
     <!-- Sup3rS3cr3tAg3nt  -->
+```
