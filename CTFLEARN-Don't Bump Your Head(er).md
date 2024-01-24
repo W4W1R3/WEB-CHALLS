@@ -11,11 +11,11 @@ Curl is a great tool for transferring data from or to a server. It's also great 
 https://curl.se/docs/manpage.html
 
 A curl request was done to the web page and got a response back as follow.
-
+```console
     % curl http://165.227.106.113/header.php
     Sorry, it seems as if your user agent is not correct, in order to access this website. The one you supplied is: curl/7.64.1
     <!-- Sup3rS3cr3tAg3nt  -->
-
+```
 So the curl command was constructed with a modified User-Agent as below.
 
     curl -H "User-Agent: Sup3rS3cr3tAg3nt" http://165.227.106.113/header.php 
